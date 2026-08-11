@@ -271,4 +271,16 @@ button {
     min-height: 100vh;
     border-radius: none;
   }
+  .cart-header {
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  margin: -25px -15px 25px;
+   background: linear-gradient(to right ,#ffddd2,white);
+  padding: 18px 16px;
+
+  /* position: relative;
+  overflow: hidden; */
+}
 }
