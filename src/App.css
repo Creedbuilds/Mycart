@@ -42,9 +42,9 @@ button {
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   align-items: center;
-  margin: 0px -15px 0px;
+  /* margin: 0px -15px 0px;
    background: linear-gradient(to right ,#ffddd2,white);
-  padding: 18px 16px;
+  padding: 18px 16px; */
 
   /* position: relative;
   overflow: hidden; */
