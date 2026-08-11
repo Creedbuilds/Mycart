@@ -45,15 +45,7 @@ function App() {
       quantity: 0,
       image: carrot,
     },
-    // {
-    //   id: 5,
-    //   name: "Mango",
-    //   category: "fruit",
-    //   weight: "250 gm",
-    //   price: 5,
-    //   quantity: 0,
-    //   image: mango,
-    // },
+    
   ]);
 
 
