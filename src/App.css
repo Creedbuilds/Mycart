@@ -15,13 +15,13 @@ button {
   cursor: pointer;
   border: none;
 }
+
 .app {
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px 0px;
-
+  padding: 20px 0;
 }
 
 .cart-container {
@@ -31,48 +31,50 @@ button {
   border-radius: 30px;
   padding: 24px 15px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-  /* background: linear-gradient(to bottom ,#ffddd2,white); */
 }
 
-
-
+/* HEADER */
 
 .cart-header {
   border-radius: 30px;
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   align-items: center;
-  margin: 0px -15px 0px;
-   background: linear-gradient(to right ,#ffddd2,white);
+
+  margin: -24px -15px 20px;
+
+  background: linear-gradient(to right, #ffddd2, white);
   padding: 18px 16px;
 
   position: relative;
   overflow: hidden;
 }
 
-
 .cart-header h1 {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  position: relative;
 }
 
 .back-button {
   width: 38px;
   height: 38px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: #ffffff;
   border-radius: 50%;
   color: #f35b05;
-  position: relative;
 }
 
 .header-space {
   width: 40px;
 }
+
+/* CART ITEMS */
+
 .cart-items {
   display: flex;
   flex-direction: column;
@@ -80,22 +82,24 @@ button {
 
 .cart-item {
   display: grid;
-  grid-template-columns: 58px 1fr auto;
-  gap: 35px;
+  grid-template-columns: 85px 1fr auto;
+  gap: 15px;
   align-items: center;
+
   padding: 12px 0;
   border-bottom: 1px solid #eeeeee;
-  height: 120px;
+
+  min-height: 120px;
 }
-
-
 
 .product-image {
   width: 85px;
   height: 85px;
+
   background: #f8f6f3;
   border-radius: 12px;
   overflow: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,8 +110,6 @@ button {
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .product-details h3 {
   font-size: 15px;
@@ -126,7 +128,6 @@ button {
   color: #555;
 }
 
-
 .product-right {
   display: flex;
   flex-direction: column;
@@ -134,14 +135,15 @@ button {
   gap: 10px;
 }
 
-
 .quantity-control {
   display: flex;
   align-items: center;
   gap: 7px;
+
   padding: 3px 6px;
   border-radius: 20px;
-  background:#fbfbfb;
+
+  background: #fbfbfb;
   border: 1px solid #eeeeee;
 }
 
@@ -154,9 +156,11 @@ button {
 .quantity-button {
   width: 22px;
   height: 22px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: white;
   border-radius: 50%;
   color: #222;
@@ -171,7 +175,7 @@ button {
   font-weight: 600;
 }
 
-
+/* COUPON */
 
 .coupon {
   display: flex;
@@ -182,10 +186,13 @@ button {
 .coupon input {
   flex: 1;
   height: 42px;
+
   border: 1px solid #eeeeee;
   border-radius: 22px;
+
   padding: 0 15px;
   outline: none;
+
   font-size: 13px;
 }
 
@@ -195,8 +202,10 @@ button {
 
 .coupon button {
   width: 78px;
+
   border-radius: 22px;
   background: #fff4eb;
+
   color: #ed5b0a;
   font-size: 12px;
   font-weight: 600;
@@ -206,6 +215,7 @@ button {
   background: #ffeadc;
 }
 
+/* ORDER SUMMARY */
 
 .order-summary {
   margin-top: 20px;
@@ -220,7 +230,9 @@ button {
 .summary-row {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 15px;
+
   font-size: 13px;
   color: #444;
 }
@@ -228,7 +240,9 @@ button {
 .summary-divider {
   width: 100%;
   height: 1px;
+
   background: #eeeeee;
+
   margin: 15px 0;
 }
 
@@ -236,20 +250,27 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-size: 20px;
   font-weight: 700;
 }
 
+/* CHECKOUT */
 
 .checkout-button {
   width: 100%;
   height: 48px;
+
   margin-top: 18px;
+
   border-radius: 25px;
+
   background: #e94e00;
   color: white;
+
   font-size: 14px;
   font-weight: 500;
+
   transition: 0.2s;
 }
 
@@ -258,29 +279,26 @@ button {
 }
 
 
+
 @media (max-width: 500px) {
   .app {
-    border-radius: none;
-    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    align-items: flex-start;
   }
 
   .cart-container {
-    border-radius: none;
     width: 100%;
     max-width: 100%;
     min-height: 100vh;
-    border-radius: none;
+    border-radius: 0;
+    padding: 24px 15px;
   }
-  .cart-header {
-  border-radius: 30px;
-  display: grid;
-  grid-template-columns: 40px 1fr 40px;
-  align-items: center;
-  margin: -25px -15px 25px;
-   background: linear-gradient(to right ,#ffddd2,white);
-  padding: 18px 16px;
 
-  /* position: relative;
-  overflow: hidden; */
-}
+  .cart-header {
+    border-radius: 0 0 30px 30px;
+    margin: -24px -15px 25px;
+    padding: 18px 16px;
+  }
+
 }
