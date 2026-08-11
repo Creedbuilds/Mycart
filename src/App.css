@@ -38,12 +38,12 @@ button {
 
 
 .cart-header {
-  border-radius: 30px;
+  border-radius-top: 30px;
   display: grid;
   grid-template-columns: 40px 1fr 40px;
   align-items: center;
   margin: -25px -14px 25px;
-   background: linear-gradient(to left ,#ffddd2,white);
+   background: linear-gradient(to right ,#ffddd2,white);
   padding: 18px 16px;
 
   /* position: relative;
