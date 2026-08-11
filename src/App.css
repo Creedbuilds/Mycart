@@ -44,8 +44,8 @@ button {
   margin: -22px -16px 25px;
   padding: 18px 16px;
   background: #fff4eb;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
 }
 
 
