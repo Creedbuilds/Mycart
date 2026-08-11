@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Minus, Plus } from "lucide-react";
+// import { ArrowLeft, Minus, Plus } from "lucide-react";
 import apple from "./assets/Appletwo.jpeg";
 import banana from "./assets/banana.jpeg";
 import tomato from "./assets/tomato.jpeg";
